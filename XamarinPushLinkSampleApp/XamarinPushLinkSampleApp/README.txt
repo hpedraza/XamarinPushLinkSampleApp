@@ -5,7 +5,7 @@ TODO:// SILENT INSTALLS BEGIN BUT NEVER COMPLETE
 
 NOTE: if running update MainApplication.cs to use you pushlink api key.
 In order for silent updates to work we need a rooted Android device and must give Sample app DEVICE_OWNER policy permission:
-	run 'dpm set-device-owner com.xenex.xamarinpushlinksampleapp/.PushlinkAdminReceiver' to grant perm after installing application.
+	run SU 'dpm set-device-owner com.xenex.xamarinpushlinksampleapp/.PushlinkAdminReceiver' to grant perm after installing application.
 
 
 WARNING: Once DEVICE_OWNER permission is granted there is no way to unset but to factory reset the device.
