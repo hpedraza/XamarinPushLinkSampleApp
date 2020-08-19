@@ -1,5 +1,5 @@
-﻿Xamarin.Android PushLink Sample using CUSTOM strategy for silent upgrade installs
-_________________________________________________________________________________
+﻿Xamarin.Android PushLink Sample Application using CUSTOM strategy for silent upgrade installs
+______________________________________________________________________________________________
 
 TODO:// SILENT INSTALLS BEGIN BUT NEVER COMPLETE
 
