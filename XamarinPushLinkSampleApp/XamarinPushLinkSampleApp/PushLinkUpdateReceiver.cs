@@ -50,7 +50,7 @@ namespace XamarinPushLinkSampleApp
             try
             {
                 Log.Debug("TESTPUSHLINK", "Init Silent Install. apkUri is " + apkUri.Path + " apkUri host is " + apkUri.Host);
-                var inputStream = context.ContentResolver.OpenInputStream(apkUri);
+                var inputStream = new FileInputStream(new File(context.FilesDir, apkUri.Path));
                 var packageInstaller = context.PackageManager.PackageInstaller;
                 var installParams = new PackageInstaller.SessionParams(PackageInstallMode.FullInstall);
                 installParams.SetAppPackageName(context.PackageName);
