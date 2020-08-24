@@ -10,6 +10,7 @@ namespace XamarinPushLinkSampleApp
     [BroadcastReceiver(Permission = "android.permission.BIND_DEVICE_ADMIN", Enabled = true, Name = "com.xenex.xamarinpushlinksampleapp.PushlinkAdminReceiver")]
     [MetaData("android.app.device_admin", Resource = "@xml/device_admin_sample")]
     [IntentFilter(new[] { "android.app.action.DEVICE_ADMIN_ENABLED", Intent.ActionMain })]
+    [IntentFilter(new[] { "android.intent.action.MY_PACKAGE_REPLACED", Intent.ActionMain })]
     public class PushlinkAdminReceiver : DeviceAdminReceiver
     {
         public override void OnReceive(Context context, Intent i)
